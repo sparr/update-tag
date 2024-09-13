@@ -5,6 +5,8 @@ inputs:
   tag_name:
     description: "Name of the tag to create or update"
     required: true
+  tag_ref:
+    description: "The target commit or object (branch, tag, etc) to tag"
 
 runs:
   using: "node20"

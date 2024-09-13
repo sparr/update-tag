@@ -15,6 +15,7 @@ jobs:
         uses: richardsimko/update-tag@v1
         with:
           tag_name: name-of-tag
+          tag_ref: branch, tag, sha, or other ref
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -22,3 +23,4 @@ jobs:
 ### Inputs
 
 - **tag_name** _(required)_ - The name of the tag you want to create or update.
+- **tag_ref** _(optional)_ - The target commit or object (branch, tag, etc) to tag.
